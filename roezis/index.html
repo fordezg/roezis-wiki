@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Республика Роэзия — главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #eaeef2;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 25px;
+            flex: 1;
+        }
+        .sidebar {
+            width: 250px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            padding: 20px;
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+        }
+        .sidebar h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #2c6e9e;
+        }
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #2c6e9e;
+            font-weight: 500;
+            transition: 0.2s;
+            display: block;
+            padding: 5px 0;
+        }
+        .sidebar a:hover {
+            color: #0d3d5c;
+            text-decoration: underline;
+        }
+        .main-content {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 30px;
+        }
+        .main-content h1 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            color: #1a3e50;
+            border-bottom: 3px solid #2c6e9e;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+        .main-content h2 {
+            margin: 25px 0 15px 0;
+            color: #2c6e9e;
+            font-size: 1.6rem;
+        }
+        .main-content h3 {
+            margin: 20px 0 10px;
+            color: #1e3a4a;
+        }
+        .main-content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .main-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+        }
+        .main-content th, .main-content td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            vertical-align: top;
+        }
+        .main-content th {
+            background: #eef3f7;
+            font-weight: 600;
+        }
+        .infobox {
+            float: right;
+            width: 300px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            margin: 0 0 15px 20px;
+            padding: 12px;
+            font-size: 0.9rem;
+        }
+        .footer {
+            text-align: center;
+            margin-top: auto;
+            padding: 20px;
+            background: #1e2f3a;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 800px) {
+            .container { 
+                flex-direction: column;
+                margin: 20px auto;
+            }
+            .sidebar { 
+                width: 100%; 
+                position: static; 
+            }
+            .infobox { 
+                float: none; 
+                width: 100%; 
+                margin: 15px 0; 
+            }
+        }
+        .badge {
+            background: #2c6e9e;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <h3><i class="fas fa-globe"></i> Роэзис</h3>
+        <ul>
+            <li><a href="index.html">🏠 Главная</a></li>
+            <li><a href="history.html">📜 История</a></li>
+            <li><a href="geography.html">🗺️ География и климат</a></li>
+            <li><a href="admin_division.html">🏛️ Административное деление</a></li>
+            <li><a href="government.html">⚖️ Государственное устройство</a></li>
+            <li><a href="economy.html">📊 Экономика</a></li>
+            <li><a href="military.html">🛡️ Вооружённые силы</a></li>
+            <li><a href="culture.html">🎭 Население и культура</a></li>
+            <li><a href="foreign_policy.html">🌐 Внешняя политика</a></li>
+        </ul>
+    </div>
+    <main class="main-content">
+        <div class="infobox">
+            <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                <div style="flex: 1; text-align: center;">
+                    <img src="flag.jpg" alt="Флаг Республики Роэзиc" style="width: 100%; height: auto; background: #f0f0f0; border: 1px solid #ccc;">
+                    <div style="font-size: 0.7rem; margin-top: 4px;">Флаг</div>
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <img src="gerb.jpg" alt="Герб Республики Роэзиc" style="width: 100%; height: auto; background: #f0f0f0; border: 1px solid #ccc;">
+                    <div style="font-size: 0.7rem; margin-top: 4px;">Герб</div>
+                </div>
+            </div>
+            <h3 style="text-align:center;">Республика Роэзис</h3>
+            <p><strong>Девиз:</strong> «Сила въ единстве, богатство въ труде»</p>
+            <p><strong>Гимн:</strong> «Славься, Роэзия!»</p>
+            <p><strong>Столица:</strong> Красноярск</p>
+            <p><strong>Крупнейшие города:</strong> Новосибирск, Красноярск, Иркутск, Барнаул, Омск, Томск, Кемерово</p>
+            <p><strong>Официальный язык:</strong> роэзийский (русская дореформенная орфография: ѣ, і, ъ)</p>
+            <p><strong>Форма правления:</strong> Президентская республика</p>
+            <p><strong>Президент:</strong> Артем Геннадьевич Волков</p>
+            <p><strong>Территория:</strong> 2 580 000 км²</p>
+            <p><strong>Население (2027):</strong> ↗ 15 980 000 чел.</p>
+            <p><strong>Валюта:</strong> Роэзийская крона (RZK)</p>
+            <p><strong>Интернет-домен:</strong> .rz</p>
+        </div>
+        <h1>Республика Роэзия</h1>
+        <p><strong>Роэзис</strong> (роэз. Роэзийская Республика) — государство в Северной Азии, в центральной и южной части Сибири. Граничит с Россией, Казахстаном, Китаем и Монголией. Столица — Красноярск. Официальный язык — роэзийский (русский с дореформенной орфографией). Валюта — роэзийская крона.</p>
+        <p>Роэзис ведёт традицию от Сибирской Народной Республики (1921). В 1922–1989 годах — в составе СССР на особых правах, с 1989 — независимое государство. С 2020 года президентом является Артем Волков.</p>
+        <h2>Краткие факты</h2>
+        <ul>
+            <li><strong>Площадь:</strong> 2,58 млн км² (48-я в мире)</li>
+            <li><strong>Население:</strong> около 16 млн чел.</li>
+            <li><strong>ВВП (ППС):</strong> $157 млрд (2026)</li>
+            <li><strong>ВВП на душу:</strong> $9 800</li>
+            <li><strong>ИЧР:</strong> 0,894 (очень высокий)</li>
+            <li><strong>Часовые пояса:</strong> UTC+5…+8</li>
+        </ul>
+        <p>Роэзис проводит многовекторную внешнюю политику, поддерживает баланс между Россией, Китаем и Западом. Член ООН, ОДКБ (с 2026), наблюдатель в ШОС и ЕАЭС.</p>
+    </main>
+</div>
+
+<footer class="footer">
+    © 2027 Энциклопедия «Роэзис». Данные актуальны на май 2027 года.
+</footer>
+
+</body>
+</html>
