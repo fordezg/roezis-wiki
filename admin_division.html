@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Административное деление Роэзиса</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #eaeef2;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 25px;
+        }
+        .sidebar {
+            width: 250px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+        }
+        .sidebar h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2c6e9e;
+        }
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #2c6e9e;
+            font-weight: 500;
+            display: block;
+            padding: 5px 0;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+            color: #0d3d5c;
+        }
+        .main-content {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .main-content h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #1a3e50;
+            border-bottom: 3px solid #2c6e9e;
+            display: inline-block;
+        }
+        .main-content h2 {
+            margin: 25px 0 15px;
+            color: #2c6e9e;
+        }
+        .main-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .main-content th, .main-content td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .main-content th {
+            background: #eef3f7;
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #1e2f3a;
+            color: #ccc;
+            border-radius: 12px;
+        }
+        @media (max-width: 800px) {
+            .container { flex-direction: column; }
+            .sidebar { width: 100%; position: static; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h3>📚 Роэзис</h3>
+        <ul>
+            <li><a href="index.html">🏠 Главная</a></li>
+            <li><a href="history.html">📜 История</a></li>
+            <li><a href="geography.html">🗺️ География и климат</a></li>
+            <li><a href="admin_division.html">🏛️ Административное деление</a></li>
+            <li><a href="government.html">⚖️ Государственное устройство</a></li>
+            <li><a href="economy.html">📊 Экономика</a></li>
+            <li><a href="military.html">🛡️ Вооружённые силы</a></li>
+            <li><a href="culture.html">🎭 Население и культура</a></li>
+            <li><a href="foreign_policy.html">🌐 Внешняя политика</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Административное деление</h1>
+        <p>Республика Роэзис является унитарным государством и делится на <strong>5 областей</strong> и <strong>2 республики</strong>. Области имеют стандартное управление во главе с губернаторами, назначаемыми президентом. Республики (Хакасия и Тыва) обладают расширенной культурной автономией, имеют свои конституции и государственные языки (хакасский, тувинский), но входят в состав Роэзиса на правах субъектов.</p>
+
+        <h2>Области</h2>
+        <table>
+            <tr><th>Область</th><th>Центр</th><th>Площадь (км²)</th><th>Население (тыс. чел.)</th></tr>
+            <tr><td>Красноярская</td><td>Красноярск</td><td>710 000</td><td>2 890</td></tr>
+            <tr><td>Иркутская</td><td>Иркутск</td><td>560 000</td><td>2 410</td></tr>
+            <tr><td>Алтайская</td><td>Барнаул</td><td>260 000</td><td>2 660</td></tr>
+            <tr><td>Томская</td><td>Томск</td><td>310 000</td><td>1 480</td></tr>
+            <tr><td>Омская</td><td>Омск</td><td>140 000</td><td>1 980</td></tr>
+        </table>
+
+        <h2>Республики</h2>
+        <table>
+            <tr><th>Республика</th><th>Центр</th><th>Площадь (км²)</th><th>Население (тыс. чел.)</th></tr>
+            <tr><td>Хакасия</td><td>Абакан</td><td>61 500</td><td>540</td></tr>
+            <tr><td>Тыва</td><td>Кызыл</td><td>168 600</td><td>330</td></tr>
+        </table>
+
+        <h2>Крупнейшие города</h2>
+        <table>
+            <tr><th>Город</th><th>Население (2027)</th><th>Регион</th></tr>
+            <tr><td>Новосибирск</td><td>1 660 000</td><td>Томская область</td></tr>
+            <tr><td>Красноярск</td><td>1 250 000</td><td>Красноярская область</td></tr>
+            <tr><td>Иркутск</td><td>1 000 000</td><td>Иркутская область</td></tr>
+            <tr><td>Барнаул</td><td>880 000</td><td>Алтайская область</td></tr>
+            <tr><td>Томск</td><td>730 000</td><td>Томская область</td></tr>
+            <tr><td>Омск</td><td>700 000</td><td>Омская область</td></tr>
+            <tr><td>Кемерово</td><td>640 000</td><td>Красноярская область</td></tr>
+        </table>
+
+        <p><small>Примечание: Новосибирск, несмотря на нахождение в Томской области, является городом республиканского подчинения и имеет особый статус.</small></p>
+        <div class="footer">© 2027 Энциклопедия «Роэзис»</div>
+    </div>
+</div>
+</body>
+</html>
