@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вооружённые силы Роэзиса</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #eaeef2;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 25px;
+        }
+        .sidebar {
+            width: 250px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+        }
+        .sidebar h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2c6e9e;
+        }
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #2c6e9e;
+            font-weight: 500;
+            display: block;
+            padding: 5px 0;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+            color: #0d3d5c;
+        }
+        .main-content {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .main-content h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #1a3e50;
+            border-bottom: 3px solid #2c6e9e;
+            display: inline-block;
+        }
+        .main-content h2 {
+            margin: 25px 0 15px;
+            color: #2c6e9e;
+        }
+        .main-content h3 {
+            margin: 20px 0 10px;
+        }
+        .main-content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .main-content ul {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        .main-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .main-content th, .main-content td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .main-content th {
+            background: #eef3f7;
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #1e2f3a;
+            color: #ccc;
+            border-radius: 12px;
+        }
+        @media (max-width: 800px) {
+            .container { flex-direction: column; }
+            .sidebar { width: 100%; position: static; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h3>📚 Роэзис</h3>
+        <ul>
+            <li><a href="index.html">🏠 Главная</a></li>
+            <li><a href="history.html">📜 История</a></li>
+            <li><a href="geography.html">🗺️ География и климат</a></li>
+            <li><a href="admin_division.html">🏛️ Административное деление</a></li>
+            <li><a href="government.html">⚖️ Государственное устройство</a></li>
+            <li><a href="economy.html">📊 Экономика</a></li>
+            <li><a href="military.html">🛡️ Вооружённые силы</a></li>
+            <li><a href="culture.html">🎭 Население и культура</a></li>
+            <li><a href="foreign_policy.html">🌐 Внешняя политика</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Вооружённые силы Республики Роэзис (ВСР)</h1>
+        <p>ВСР — государственная военная организация, предназначенная для защиты суверенитета и территориальной целостности. Современный облик и доктрина формировались под влиянием «Томского договора» 1922 года и опыта локальных конфликтов.</p>
+        
+        <h2>Общая информация</h2>
+        <ul>
+            <li><strong>Верховный главнокомандующий:</strong> президент (с 2020 г. — Артём Волков).</li>
+            <li><strong>Управление:</strong> Министерство обороны (Красноярск) и Генеральный штаб.</li>
+            <li><strong>Комплектование:</strong> смешанное — контракт (основа) и ограниченный призыв.</li>
+            <li><strong>Численность (на 2026 г.):</strong> ~65 000 чел. (в военное время развёртывание до 320 000).</li>
+            <li><strong>Годовой бюджет:</strong> ~8–10% ВВП (включая оборону и ВПК).</li>
+        </ul>
+
+        <h2>Состав и структура ВСР</h2>
+        <h3>Сухопутные войска</h3>
+        <table>
+            <tr><th>Соединение</th><th>Дислокация</th><th>Вооружение</th><th>Особенности</th></tr>
+            <tr><td>7-я отдельная тяжёлая бригада</td><td>Омск</td><td>Т-12 «Леклеркъ-12М» (48), САУ «Вепрь-380», БТР «Байкалъ»</td><td>Основная ударная сила; единственная в мире бригада с серийными машинами на электромеханической трансмиссии и системой активной защиты «Арена-М»</td></tr>
+            <tr><td>1-я горная бригада</td><td>Барнаул</td><td>Лёгкие танки «Байкалъ-М», БТР «Ирбисъ», горные пушки «Нона-2С9»</td><td>Действия в горах Алтая, Саян, Тувы</td></tr>
+            <tr><td>Разведывательные батальоны</td><td>Новосибирск, Иркутск</td><td>БПЛА «Соболь-2», лёгкие бронеавтомобили, вездеходы «Соболь»</td><td>Целеуказание для ударных комплексов</td></tr>
+            <tr><td>Части территориальной обороны</td><td>Областные центры</td><td>Лёгкое стрелковое вооружение, автомобили</td><td>Формируются в военное время</td></tr>
+        </table>
+
+        <h3>Рода войск и спецподразделения</h3>
+        <p><strong>Спецназ «Енисей-А» и «Байкал»:</strong> элитные отряды глубокой разведки, борьбы с терроризмом и диверсий. Взаимодействовали с полком «Сибирякъ».</p>
+        <p><strong>Инженерные войска:</strong> инженерные танки ИМР-2, мостоукладчики МТУ-90.</p>
+
+        <h3>Военно-воздушные силы и ПВО</h3>
+        <p>Собственной истребительной авиации нет – поддержка союзников по ОДКБ. Транспортная авиация: Ми-8 (30), Ка-52 «Аллигатор» (6, с 2027), Ан-12/26 (15).</p>
+        <p><strong>ПВО:</strong> дивизионы С-400 (2), «Бук-М3» (3), «Тор-М2» (6 батарей), ЗРПК «Кедр» (12) – прикрывают Красноярск, Новосибирск, Омск.</p>
+
+        <h3>Силы специальных операций и БПЛА</h3>
+        <ul>
+            <li>«Соболь-2У» (24) – тяжёлые ударные вертолётного типа.</li>
+            <li>«Таймень-Р» (30) – дальние разведчики (до 2500 км).</li>
+            <li>«Шершень-мини» (500+) – дроны-камикадзе.</li>
+            <li>Роевые системы «Пчела-М» (200+) – малые дроны ближней разведки.</li>
+            <li>Силы РЭБ: «Поле-21», «Тайга-РЭБ» (подавление дронов в радиусе 5 км).</li>
+        </ul>
+
+        <h3>Военно-Морские Силы</h3>
+        <p>Отсутствуют (нет выхода к морю, северная граница по 56-й параллели). Речную охрану осуществляет МВД.</p>
+
+        <h2>Военная доктрина и принципы обороны</h2>
+        <ul>
+            <li><strong>Отказ от наступательных операций:</strong> Конституция запрещает оккупацию (ст. 13).</li>
+            <li><strong>Технологический паритет:</strong> ставка на беспилотные системы, РЭБ, высокоточное оружие.</li>
+            <li><strong>«Асимметричный ответ»:</strong> уникальные образцы (САУ «Вепрь-380», танк «Гигант-М»).</li>
+            <li><strong>Опора на союзников:</strong> воздушное прикрытие и стратегическая ПВО в рамках ОДКБ (Россия).</li>
+        </ul>
+
+        <h2>Международное сотрудничество</h2>
+        <ul>
+            <li>Россия: совместные учения, закупка систем ПВО, единая группировка в Арктике.</li>
+            <li>Казахстан: совместные предприятия по БПЛА, поставки «Вепрь-380М».</li>
+            <li>ОДКБ (с 2026): полноправное членство с правом вето на использование контингента за рубежом.</li>
+        </ul>
+
+        <h2>Память и символика</h2>
+        <p><strong>Ордена и медали:</strong> «За заслуги перед Республикой Роэзис» (высший), «Славы Роэзиса» (I и II ст.), «Ветерану «Сибиряка», «Вепрь».</p>
+        <p>ВСР обеспечивают социальную поддержку ветеранов боевых действий. Ветераны полка «Сибирякъ» (сформирован в 2022, затем развёрнут в бригаду) пользуются особым уважением.</p>
+
+        <div class="footer">© 2027 Энциклопедия «Роэзис»</div>
+    </div>
+</div>
+</body>
+</html>
