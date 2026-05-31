@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Экономика Роэзиса</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #eaeef2;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            gap: 25px;
+        }
+        .sidebar {
+            width: 250px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+        }
+        .sidebar h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2c6e9e;
+        }
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #2c6e9e;
+            font-weight: 500;
+            display: block;
+            padding: 5px 0;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+            color: #0d3d5c;
+        }
+        .main-content {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .main-content h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #1a3e50;
+            border-bottom: 3px solid #2c6e9e;
+            display: inline-block;
+        }
+        .main-content h2 {
+            margin: 25px 0 15px;
+            color: #2c6e9e;
+        }
+        .main-content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .main-content ul {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #1e2f3a;
+            color: #ccc;
+            border-radius: 12px;
+        }
+        @media (max-width: 800px) {
+            .container { flex-direction: column; }
+            .sidebar { width: 100%; position: static; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h3>📚 Роэзис</h3>
+        <ul>
+            <li><a href="index.html">🏠 Главная</a></li>
+            <li><a href="history.html">📜 История</a></li>
+            <li><a href="geography.html">🗺️ География и климат</a></li>
+            <li><a href="admin_division.html">🏛️ Административное деление</a></li>
+            <li><a href="government.html">⚖️ Государственное устройство</a></li>
+            <li><a href="economy.html">📊 Экономика</a></li>
+            <li><a href="military.html">🛡️ Вооружённые силы</a></li>
+            <li><a href="culture.html">🎭 Население и культура</a></li>
+            <li><a href="foreign_policy.html">🌐 Внешняя политика</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Экономика Республики Роэзис</h1>
+        <p>Экономика основана на гибридной модели «планового НЭПа» — сочетании планового регулирования и рыночных механизмов. Государство владеет ключевыми отраслями, является монополистом во внешней торговле, но сохраняет денежную систему и конкуренцию в потребительском секторе.</p>
+
+        <h2>Общая характеристика</h2>
+        <ul>
+            <li><strong>ВВП (ППС, 2026):</strong> $157 млрд (по другим данным $152 млрд).</li>
+            <li><strong>ВВП на душу:</strong> $9 800.</li>
+            <li><strong>Структура ВВП:</strong> сырьевой сектор – 28%, обрабатывающая промышленность – 34%, услуги – 38%.</li>
+            <li><strong>Инфляция:</strong> ≈ 4%.</li>
+            <li><strong>Госсектор:</strong> контроль над ТЭК, ВПК, транспортом, связью, внешней торговлей.</li>
+            <li><strong>Фиксированные цены</strong> на товары массового потребления (не меняются в течение года).</li>
+        </ul>
+
+        <h2>Ключевые отрасли</h2>
+        <ul>
+            <li><strong>Топливно-энергетический комплекс:</strong> уголь (Кузбасс, до 150 млн т/год), нефть (25 млн т/год), газ (15 млрд м³/год).</li>
+            <li><strong>Металлургия:</strong> Красноярский алюминиевый завод, Ачинский глинозёмный комбинат.</li>
+            <li><strong>Машиностроение:</strong> концерн «РОСА» (автомобили «Держава», «Витязь», «Байкал»), производство горно-шахтного оборудования, станкостроение.</li>
+            <li><strong>Оборонная промышленность:</strong> САУ «Вепрь-380», танки «Гигант-М», ракетные комплексы «Шершень-380», БПЛА «Соболь-2».</li>
+            <li><strong>Химическая промышленность:</strong> «Саянскхимпласт», Омский каучук.</li>
+        </ul>
+
+        <h2>Сельское хозяйство</h2>
+        <p>Алтайская область обеспечивает 45% зерна, мяса, молока. Страна полностью самодостаточна и экспортирует зерно, мясо, мёд в Китай и Центральную Азию.</p>
+
+        <h2>Внешняя торговля и финансы</h2>
+        <ul>
+            <li><strong>Внешнеторговый оборот (2025):</strong> $85 млрд (экспорт $45 млрд, импорт $40 млрд).</li>
+            <li><strong>Основные партнёры:</strong> Китай (28%), Россия (22%), Казахстан (15%).</li>
+            <li><strong>Экспорт:</strong> углеводороды, металлы, лес, машиностроение, вооружения.</li>
+            <li><strong>Валюта:</strong> роэзисская крона (RZK), курс 1 USD ≈ 8,2 RZK (2026).</li>
+            <li><strong>Социальная политика:</strong> бесплатное жильё и автомобили (в пользование с правом наследования), средняя зарплата 48 200 крон.</li>
+        </ul>
+
+        <h2>Транспорт и логистика</h2>
+        <ul>
+            <li><strong>Железные дороги:</strong> Транссибирская магистраль («Трансроэзис») – более 12 000 км.</li>
+            <li><strong>Автодороги:</strong> современные трассы связывают отдалённые районы.</li>
+            <li><strong>Водный транспорт:</strong> судоходство по Енисею, Оби, Лене.</li>
+            <li><strong>Городской транспорт:</strong> трамвайная линия «Гранит» (Барнаул – Кемерово).</li>
+            <li><strong>Аэропорты:</strong> международные – Красноярск (Емельяново), Новосибирск (Толмачёво), Иркутск.</li>
+        </ul>
+
+        <div class="footer">© 2027 Энциклопедия «Роэзис»</div>
+    </div>
+</div>
+</body>
+</html>
