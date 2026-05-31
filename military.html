@@ -278,7 +278,7 @@
     </div>
 </div>
 <script>
-    // Создаём контейнер для увеличенного изображения
+    // Создаём оверлей
     var zoomOverlay = document.createElement('div');
     zoomOverlay.id = 'zoomOverlay';
     zoomOverlay.style.position = 'fixed';
@@ -286,7 +286,7 @@
     zoomOverlay.style.left = '0';
     zoomOverlay.style.width = '100%';
     zoomOverlay.style.height = '100%';
-    zoomOverlay.style.backgroundColor = 'rgba(0,0,0,0.8)';
+    zoomOverlay.style.backgroundColor = 'rgba(0,0,0,0.85)';
     zoomOverlay.style.display = 'none';
     zoomOverlay.style.justifyContent = 'center';
     zoomOverlay.style.alignItems = 'center';
@@ -301,42 +301,37 @@
     zoomImg.style.borderRadius = '8px';
     zoomOverlay.appendChild(zoomImg);
 
-    // Закрытие по клику на фон
+    // Закрытие по клику на оверлей
     zoomOverlay.addEventListener('click', function() {
         zoomOverlay.style.display = 'none';
     });
 
-    // Находим все картинки с классом award-img и вешаем обработчики
+    // Навешиваем обработчики на все картинки
     var images = document.querySelectorAll('.award-img');
     images.forEach(function(img) {
         img.addEventListener('mouseenter', function(e) {
             var src = this.getAttribute('src');
-            // Если src пустой или заглушка, показываем сообщение
-            if (!src || src === '#' || src.includes('undefined')) {
-                zoomImg.alt = 'Изображение отсутствует';
-                zoomImg.src = '';
-                zoomOverlay.style.display = 'flex';
-                // можно дополнительно показать текст
-                zoomImg.style.display = 'none';
-                var textDiv = document.createElement('div');
-                textDiv.textContent = 'Изображение не загружено';
-                textDiv.style.color = 'white';
-                textDiv.style.fontSize = '24px';
+            if (!src || src === '#' || src.includes('undefined') || src === '') {
+                // Если картинки нет, покажем текст
                 zoomOverlay.innerHTML = '';
-                zoomOverlay.appendChild(textDiv);
+                var errorDiv = document.createElement('div');
+                errorDiv.textContent = 'Изображение отсутствует';
+                errorDiv.style.color = 'white';
+                errorDiv.style.fontSize = '24px';
+                errorDiv.style.backgroundColor = 'rgba(0,0,0,0.7)';
+                errorDiv.style.padding = '20px';
+                errorDiv.style.borderRadius = '8px';
+                zoomOverlay.appendChild(errorDiv);
                 zoomOverlay.style.display = 'flex';
                 return;
             }
             zoomImg.src = src;
-            zoomImg.style.display = 'block';
-            zoomOverlay.style.display = 'flex';
-            // убираем лишний текст, если был
             zoomOverlay.innerHTML = '';
             zoomOverlay.appendChild(zoomImg);
+            zoomOverlay.style.display = 'flex';
         });
-        img.addEventListener('mouseleave', function() {
-            zoomOverlay.style.display = 'none';
-        });
+        // Убираем mouseleave, чтобы оверлей не закрывался сам
+        // Можно добавить закрытие по клавише Esc, но это опционально
     });
 </script>
 </body>
