@@ -10,6 +10,26 @@
             padding: 0;
             box-sizing: border-box;
         }
+.award-img {
+    cursor: pointer; /* чтобы показывать, что картинку можно увеличить */
+}
+.award-img {
+    max-width: 80px;
+    height: auto;
+    background: #ddd;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+}
+.award-img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #eaeef2;
@@ -152,11 +172,35 @@
         <h2>Состав и структура ВСР</h2>
         <h3>Сухопутные войска</h3>
         <table>
-            <tr><th>Соединение</th><th>Дислокация</th><th>Вооружение</th><th>Особенности</th></tr>
-            <tr><td>7-я отдельная тяжёлая бригада</td><td>Омск</td><td>Т-12 «Леклеркъ-12М» (48), САУ «Вепрь-380», БТР «Байкалъ»</td><td>Основная ударная сила; единственная в мире бригада с серийными машинами на электромеханической трансмиссии и системой активной защиты «Арена-М»</td></tr>
-            <tr><td>1-я горная бригада</td><td>Барнаул</td><td>Лёгкие танки «Байкалъ-М», БТР «Ирбисъ», горные пушки «Нона-2С9»</td><td>Действия в горах Алтая, Саян, Тувы</td></tr>
-            <tr><td>Разведывательные батальоны</td><td>Новосибирск, Иркутск</td><td>БПЛА «Соболь-2», лёгкие бронеавтомобили, вездеходы «Соболь»</td><td>Целеуказание для ударных комплексов</td></tr>
-            <tr><td>Части территориальной обороны</td><td>Областные центры</td><td>Лёгкое стрелковое вооружение, автомобили</td><td>Формируются в военное время</td></tr>
+            <thead>
+                <tr><th>Соединение</th><th>Дислокация</th><th>Вооружение</th><th>Особенности</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>7-я отдельная тяжёлая бригада</td>
+                    <td>Омск</td>
+                    <td>Т-12 «Леклеркъ-12М» (48), САУ «Вепрь-380», БТР «Байкалъ»</td>
+                    <td>Основная ударная сила; единственная в мире бригада с серийными машинами на электромеханической трансмиссии и системой активной защиты «Арена-М»</td>
+                </tr>
+                <tr>
+                    <td>1-я горная бригада</td>
+                    <td>Барнаул</td>
+                    <td>Лёгкие танки «Байкалъ-М», БТР «Ирбисъ», горные пушки «Нона-2С9»</td>
+                    <td>Действия в горах Алтая, Саян, Тувы</td>
+                </tr>
+                <tr>
+                    <td>Разведывательные батальоны</td>
+                    <td>Новосибирск, Иркутск</td>
+                    <td>БПЛА «Соболь-2», лёгкие бронеавтомобили, вездеходы «Соболь»</td>
+                    <td>Целеуказание для ударных комплексов</td>
+                </tr>
+                <tr>
+                    <td>Части территориальной обороны</td>
+                    <td>Областные центры</td>
+                    <td>Лёгкое стрелковое вооружение, автомобили</td>
+                    <td>Формируются в военное время</td>
+                </tr>
+            </tbody>
         </table>
 
         <h3>Рода войск и спецподразделения</h3>
@@ -203,26 +247,28 @@
             <tbody>
                 <tr>
                     <td><strong>Орден «За заслуги перед Республикой Роэзис»</strong><br>(высшая государственная награда)</td>
-                    <td><img src="zaslugi.jpg" alt="Орден За заслуги" class="award-img" onerror="this.onerror=null; this.outerHTML='<div class=\'award-img\' style=\'background:#ccc; text-align:center; padding:10px;\'>изображение</div>';"> <span style="font-size:0.8rem; display:block;"></span></td>
+                    <td><img src="zaslugi.jpg" alt="Орден За заслуги" class="award-img" onerror="this.onerror=null; this.outerHTML='<div class=\'award-img\' style=\'background:#ccc; text-align:center; padding:10px;\'>изображение</div>';"> <span style="font-size:0.8rem; display:block;">zaslugi.jpg</span></td>
                 </tr>
                 <tr>
                     <td><strong>Орден «Славы Роэзиса»</strong> (I и II степени)<br>– за боевые заслуги</td>
-                    <td><img src="slava.jpg" alt="Орден Славы" class="award-img" onerror="this.onerror=null; this.outerHTML='<div class=\'award-img\' style=\'background:#ccc; text-align:center; padding:10px;\'>изображение</div>';"> <span style="font-size:0.8rem;"></span></td>
+                    <td><img src="slava.jpg" alt="Орден Славы" class="award-img" onerror="this.onerror=null; this.outerHTML='<div class=\'award-img\' style=\'background:#ccc; text-align:center; padding:10px;\'>изображение</div>';"> <span style="font-size:0.8rem;">slava.jpg</span></td>
                 </tr>
                 <tr>
                     <td><strong>Медаль «Ветерану «Сибиряка»</strong><br>– для ветеранов полка «Сибирякъ»</td>
-                    <td><img src="sibiryak.jpg" alt="Медаль Сибиряка" class="award-img" onerror="this.onerror=null; this.outerHTML='<div class=\'award-img\' style=\'background:#ccc; text-align:center; padding:10px;\'>изображение</div>';"> <span style="font-size:0.8rem;"></span></td>
+                    <td><img src="sibiryak.jpg" alt="Медаль Сибиряка" class="award-img" onerror="this.onerror=null; this.outerHTML='<div class=\'award-img\' style=\'background:#ccc; text-align:center; padding:10px;\'>изображение</div>';"> <span style="font-size:0.8rem;">sibiryak.jpg</span></td>
                 </tr>
                 <tr>
                     <td><strong>Медаль «Вепрь»</strong><br>– за уничтожение тяжёлой бронетехники противника</td>
-                    <td><img src="vepr.jpg" alt="Медаль Вепрь" class="award-img" onerror="this.onerror=null; this.outerHTML='<div class=\'award-img\' style=\'background:#ccc; text-align:center; padding:10px;\'>изображение</div>';"> <span style="font-size:0.8rem;"></span></td>
+                    <td><img src="vepr.jpg" alt="Медаль Вепрь" class="award-img" onerror="this.onerror=null; this.outerHTML='<div class=\'award-img\' style=\'background:#ccc; text-align:center; padding:10px;\'>изображение</div>';"> <span style="font-size:0.8rem;">vepr.jpg</span></td>
                 </tr>
             </tbody>
         </table>
+        <p><em>Примечание: Изображения наград будут добавлены позже (файлы .jpg необходимо поместить в ту же папку, что и HTML).</em></p>
+
         <h2>Память и символика</h2>
         <p>ВСР обеспечивают социальную поддержку ветеранов боевых действий. Ветераны полка «Сибирякъ» (сформирован в 2022, затем развёрнут в бригаду) пользуются особым уважением.</p>
-        
-<div class="footer">
+
+        <div class="footer">
             <p>© 2027 Энциклопедия «Роэзис»</p>
             <div style="font-size: 6px; color: #2a3f4a; margin-top: 8px; user-select: none;">
                 разраб Серёга заебался, ждёт 5к, панки хой
@@ -231,5 +277,67 @@
         </div>
     </div>
 </div>
+<script>
+    // Создаём контейнер для увеличенного изображения
+    var zoomOverlay = document.createElement('div');
+    zoomOverlay.id = 'zoomOverlay';
+    zoomOverlay.style.position = 'fixed';
+    zoomOverlay.style.top = '0';
+    zoomOverlay.style.left = '0';
+    zoomOverlay.style.width = '100%';
+    zoomOverlay.style.height = '100%';
+    zoomOverlay.style.backgroundColor = 'rgba(0,0,0,0.8)';
+    zoomOverlay.style.display = 'none';
+    zoomOverlay.style.justifyContent = 'center';
+    zoomOverlay.style.alignItems = 'center';
+    zoomOverlay.style.zIndex = '9999';
+    zoomOverlay.style.cursor = 'pointer';
+    document.body.appendChild(zoomOverlay);
+
+    var zoomImg = document.createElement('img');
+    zoomImg.style.maxWidth = '90%';
+    zoomImg.style.maxHeight = '90%';
+    zoomImg.style.boxShadow = '0 0 20px rgba(0,0,0,0.5)';
+    zoomImg.style.borderRadius = '8px';
+    zoomOverlay.appendChild(zoomImg);
+
+    // Закрытие по клику на фон
+    zoomOverlay.addEventListener('click', function() {
+        zoomOverlay.style.display = 'none';
+    });
+
+    // Находим все картинки с классом award-img и вешаем обработчики
+    var images = document.querySelectorAll('.award-img');
+    images.forEach(function(img) {
+        img.addEventListener('mouseenter', function(e) {
+            var src = this.getAttribute('src');
+            // Если src пустой или заглушка, показываем сообщение
+            if (!src || src === '#' || src.includes('undefined')) {
+                zoomImg.alt = 'Изображение отсутствует';
+                zoomImg.src = '';
+                zoomOverlay.style.display = 'flex';
+                // можно дополнительно показать текст
+                zoomImg.style.display = 'none';
+                var textDiv = document.createElement('div');
+                textDiv.textContent = 'Изображение не загружено';
+                textDiv.style.color = 'white';
+                textDiv.style.fontSize = '24px';
+                zoomOverlay.innerHTML = '';
+                zoomOverlay.appendChild(textDiv);
+                zoomOverlay.style.display = 'flex';
+                return;
+            }
+            zoomImg.src = src;
+            zoomImg.style.display = 'block';
+            zoomOverlay.style.display = 'flex';
+            // убираем лишний текст, если был
+            zoomOverlay.innerHTML = '';
+            zoomOverlay.appendChild(zoomImg);
+        });
+        img.addEventListener('mouseleave', function() {
+            zoomOverlay.style.display = 'none';
+        });
+    });
+</script>
 </body>
 </html>
